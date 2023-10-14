@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/food_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Delivery"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_delivery"
+        android:text="Enter Item : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/food_delivery"
+        android:layout_marginLeft="135dp"
+        android:textSize="25dp"
+        android:hint="eg.Pizza"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:text="Enter Quantity : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginLeft="175dp"
+        android:textSize="25dp"
+        android:hint="eg.2"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:text="Name : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_marginLeft="100dp"
+        android:textSize="25dp"
+        android:hint="name"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:text="Email : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text4"
+        android:layout_marginLeft="100dp"
+        android:textSize="25dp"
+        android:hint="email"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text5"
+        android:text="Address : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text5"
+        android:layout_marginLeft="120dp"
+        android:textSize="25dp"
+        android:hint="Address"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text6"
+        android:text="Phone Number : "
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text6"
+        android:layout_marginLeft="190dp"
+        android:textSize="25dp"
+        android:hint="Phone number"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text7"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
