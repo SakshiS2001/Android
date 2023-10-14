@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Addition of numbers"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:hint="Enter first number"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num1"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:hint="Enter second number"/>
+
+    <EditText
+        android:id="@+id/num3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num2"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:hint="Enter third number"/>
+
+    <EditText
+        android:id="@+id/num4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num3"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:hint="Enter forth number"/>
+
+    <EditText
+        android:id="@+id/num5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/num4"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:hint="Enter fifth number"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/num5"
+        android:layout_marginTop="50dp"
+        android:text="Add"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/add"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+</RelativeLayout>
