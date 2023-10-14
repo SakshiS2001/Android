@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:weightSum="4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:text="Calculator"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_weight="4"/>
+    </TableRow>
+
+    <TableRow
+        android:weightSum="4">
+        <EditText
+            android:id="@+id/src"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_weight="4"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textAlignment="viewEnd"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:maxLines="5"
+            tools:ignore="RtlCompat" />
+    </TableRow>
+
+    <TableRow
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="arithmatic"></Button>
+    </TableRow>
+
+    <TableRow
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_on_primary"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="arithmatic"></Button>
+    </TableRow>
+
+    <TableRow
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="arithmatic"></Button>
+    </TableRow>
+
+    <TableRow
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="clear"></Button>
+
+        <Button
+            android:id="@+id/btn14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="digit"></Button>
+
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="equal"></Button>
+
+        <Button
+            android:id="@+id/btn16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:onClick="arithmatic"></Button>
+    </TableRow>
+
+</TableLayout>
